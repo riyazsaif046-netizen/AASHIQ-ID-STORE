@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: aashiq-ff-profile-showcase
+    env: docker
+    healthCheckPath: /api/health
+    envVars:
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: TICKET_DB_PATH
+        value: /data/tickets.json
+    disk:
+      name: ticket-data
+      mountPath: /data
+      sizeGB: 1

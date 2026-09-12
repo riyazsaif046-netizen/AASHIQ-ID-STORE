@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.git/
+*.bat
+README*
+PUBLIC_LINK_README.txt
